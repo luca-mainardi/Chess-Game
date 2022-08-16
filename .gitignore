@@ -1,0 +1,13 @@
+
+#file da ignorare sono gli eseguibili che dipendono dal tipo di compilatore
+#i vari file di testo generati dai programmi
+
+build/*
+!build/.gitkeep
+.DS_Store
+
+#editor di testo
+
+.vscode
+
+
