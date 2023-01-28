@@ -1,22 +1,24 @@
-Progetto Scacchi in C++ per corso di Laboratorio di Programmazione:
+Chess project in C++ for Programming Lab course:
 
-Comandi su console:
+Console commands:
 
-$cd build
+`cd build`
 
-$cmake ..
+`cmake ...`
 
-$make
+`make`
 
-In caso il "cmake .." non funzionasse perchè non trova il generatore corretto (a causa dell'implementazione su sistemi operativi differenti):
+In case the "cmake .." doesn't work because it doesn't find the correct generator:
 
-$rm CMakeCache.txt
+`rm CMakeCache.txt`
 
-$cmake -G "MinGW Makefiles" ..
+`cmake -G "MinGW Makefiles" ...`
 
-$make
+`make`
 
-I file di log rispettivamente per la partita PC e CC sono presenti nella directory /build sotto forma di file logPC.txt e logCC.txt
-E' importante che non vengano usati altri file .txt per il replay perchè sono generati in modo da contenere altre informazioni importanti quali per esempio le mosse speciali (file build/spec.txt).
-L'eseguibile del replay non fa controlli sulla validita' delle mosse perchè si aspetta che le mosse provengano da una partita già valida.
-Quando si inseriscono i file come argomento di riga di comando è necessario che non venga inserito il prefisso "./" per indicare la cartella corrente.
+The log files for the PC and CC match, respectively, are in the /build directory in the form of logPC.txt and logCC.txt files.
+
+It is important that no other .txt files are used for the replay because they are generated to contain other important information such as special moves (build/spec.txt file). 
+
+The replay executable does not check for the validity of the moves because it expects the moves to come from an already valid match. 
+When entering files as command-line arguments, it is necessary that you do not prefix "./" to indicate the current folder.
