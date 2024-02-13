@@ -1,4 +1,4 @@
-Chess project in C++ for Programming Lab course:
+Chess project in C++ for Programming Lab course (INP8084324), University of Padova:
 
 Console commands:
 
